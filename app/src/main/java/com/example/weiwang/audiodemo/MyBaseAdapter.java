@@ -183,7 +183,7 @@ public class MyBaseAdapter extends BaseQuickAdapter<MediaEntity,BaseViewHolder> 
 
         TextView startTime= (TextView) getViewByPosition(getRecyclerView(),playIndex,R.id.tv_start_time);
         startTime.setText(oldEntity.getStartTime());
-        
+
         ImageView oldplay= (ImageView) getViewByPosition(getRecyclerView(),playIndex,R.id.play);
 
         oldplay.setVisibility(View.VISIBLE);
