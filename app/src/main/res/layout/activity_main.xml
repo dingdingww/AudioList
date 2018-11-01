@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id="@+id/exo_progress1"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toRightOf="@id/play"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        app:bar_height="1dp"
+        app:touch_target_height="3dp"
+        app:ad_marker_width="3dp"
+        android:layout_marginRight="10dp"
+        app:hide_on_touch="false"
+        app:hide_during_ads="false"
+        app:buffered_color="#33ee2d1b"
+        app:scrubber_color="#ee2d1b"
+        app:played_color="#ee2d1b"
+        app:scrubber_enabled_size="7dp"
+        app:scrubber_dragged_size="7dp"
+        app:scrubber_drawable="@mipmap/icon_progress_mark"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_height="12dp"/>
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id="@+id/exo_progress2"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toRightOf="@id/play"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        app:bar_height="1dp"
+        app:touch_target_height="3dp"
+        app:ad_marker_width="3dp"
+        android:layout_marginRight="10dp"
+        app:hide_on_touch="false"
+        app:hide_during_ads="false"
+        app:buffered_color="#33ee2d1b"
+        app:scrubber_color="#ee2d1b"
+        app:played_color="#ee2d1b"
+        app:scrubber_enabled_size="7dp"
+        app:scrubber_dragged_size="7dp"
+        app:scrubber_drawable="@mipmap/icon_progress_mark"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_height="12dp"/>
+
+
+</LinearLayout>
